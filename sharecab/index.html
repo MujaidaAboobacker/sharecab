@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareCab — Uber-Style Shared Rides & Fare Splitting</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Modern Sticky Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center;">
+                    <img src="img/sharecab_car.jpg" alt="ShareCab Car" class="brand-logo-img">
+                    ShareCab <span class="badge">Ride Sharing</span>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="auth/login.php" class="nav-login">Passenger Sign In</a>
+                <a href="auth/driver_login.php" class="btn-secondary" style="padding: 8px 16px; font-size: 13px;">🚗 Driver Portal</a>
+                <a href="auth/register.php" class="nav-register">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                Share Your Ride.<br>
+                <span class="gradient-text">Save Your Fare.</span>
+            </h1>
+            <p>
+                The smart way to travel. Connect with commuters traveling along your exact route, split cab expenses equally, coordinate with real-time route maps, and ride in comfort.
+            </p>
+            <div class="hero-buttons">
+                <a href="auth/register.php" class="btn-primary">
+                    🚀 Book / Share a Ride
+                </a>
+                <a href="auth/driver_register.php" class="btn-secondary" style="border-color: var(--primary); color: var(--primary-hover);">
+                    🚗 Drive with ShareCab
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-photo-card">
+                <img src="img/sharecab_car.jpg" alt="ShareCab Fleet Vehicle">
+                <div class="hero-photo-footer">
+                    <div class="hero-photo-badge">
+                        <span>⭐ 4.9 Verified Rides</span>
+                    </div>
+                    <span class="status-badge open">● Active Sharing Network</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dual Role Highlights (Passenger vs Driver) -->
+    <section style="background: var(--surface); padding: 50px 24px; border-top: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200);">
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <div class="card" style="margin-bottom: 0; border-left: 5px solid var(--primary);">
+                <span style="font-size: 30px; display: block; margin-bottom: 10px;">👤</span>
+                <h3 style="font-size: 20px; font-weight: 800; margin-bottom: 8px; color: var(--slate-900);">For Passengers</h3>
+                <p style="color: var(--slate-600); font-size: 14px; margin-bottom: 18px;">
+                    Find verified co-passengers travelling your route. Split the taxi fare 50-75%, track interactive routes, and chat securely in group chat.
+                </p>
+                <div style="display: flex; gap: 10px;">
+                    <a href="auth/register.php" class="btn-primary" style="padding: 10px 18px; font-size: 13px;">Passenger Sign Up</a>
+                    <a href="auth/login.php" class="btn-secondary" style="padding: 10px 18px; font-size: 13px;">Sign In</a>
+                </div>
+            </div>
+
+            <div class="card" style="margin-bottom: 0; border-left: 5px solid var(--success);">
+                <span style="font-size: 30px; display: block; margin-bottom: 10px;">🚗</span>
+                <h3 style="font-size: 20px; font-weight: 800; margin-bottom: 8px; color: var(--slate-900);">For Drivers</h3>
+                <p style="color: var(--slate-600); font-size: 14px; margin-bottom: 18px;">
+                    Register your vehicle and license plate. Pick up pre-filled shared passenger rides on high-demand routes, maximize your daily earnings, and mark trips completed.
+                </p>
+                <div style="display: flex; gap: 10px;">
+                    <a href="auth/driver_register.php" class="btn-primary" style="padding: 10px 18px; font-size: 13px; background: var(--success);">Driver Sign Up</a>
+                    <a href="auth/driver_login.php" class="btn-secondary" style="padding: 10px 18px; font-size: 13px;">Driver Portal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose ShareCab?</h2>
+        <p class="section-subtitle">
+            A comprehensive, user-friendly cab sharing solution built for modern commuters and drivers.
+        </p>
+
+        <div class="feature-container">
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Route Matching</h3>
+                <p>Search upcoming rides matching your origin, destination, and schedule with verified availability.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Dynamic Fare Splitting</h3>
+                <p>Fares automatically divide equally among confirmed passengers, cutting your commute costs in half.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <h3>Interactive Maps</h3>
+                <p>Visualize routes on live interactive maps, calculate road distance, and preview estimated travel duration.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>In-Ride Group Chat</h3>
+                <p>Chat directly with co-passengers in a dedicated, secure group chat to coordinate pickup points.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2>How It Works</h2>
+        <p class="section-subtitle">
+            Start sharing rides in three simple steps.
+        </p>
+
+        <div class="steps">
+            <div class="step">
+                <span class="step-number">1</span>
+                <h3>Find or Create</h3>
+                <p>Post your upcoming trip with available seats, or search for passengers traveling the same path.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <h3>Join & Coordinate</h3>
+                <p>Book a seat on an available ride. Check route maps and chat in real-time to finalize your meeting spot.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <h3>Meet & Travel</h3>
+                <p>Meet your verified driver and fellow passengers, enjoy your comfortable ride, and split the travel cost.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <h3>🚕 ShareCab</h3>
+            <p>Share your ride. Save your fare. Cab sharing made simple.</p>
+            <p>Web Programming Lab Project &bull; HTML &bull; CSS &bull; JavaScript &bull; PHP &bull; MySQL</p>
+        </div>
+    </footer>
+
+</body>
+</html>
